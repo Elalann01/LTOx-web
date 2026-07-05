@@ -1,0 +1,158 @@
+/* ==========================================================================
+   1. VARIABLES Y ESTILOS BASE
+   ========================================================================== */
+:root { 
+    --azul-petroleo: #00759a;
+    --cafe-oscuro: #2C1a0e;
+    --cafe-medio: #6b3f1f;
+    --crema: #f5ecd7;
+    --gris-suave: #E8E0D0;
+    --texto-oscuro: #1A1A1A;
+    --texto-suave: #555555;        
+}
+
+body { 
+    font-family: Georgia, serif;
+    background-color: var(--crema);
+    color: var(--texto-oscuro);
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================================================================
+   2. CABECERA (HEADER)
+   ========================================================================== */
+header {
+    background-color: var(--cafe-oscuro);
+    color: var(--crema);
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 4px solid var(--azul-petroleo);
+}
+
+/* ==========================================================================
+   3. BARRA DE NAVEGACIÓN (BLINDADA CONTRA FRANJAS)
+   ========================================================================== */
+nav {
+    background-color: var(--cafe-medio) !important;
+    padding: 14px 0 !important;
+    margin: 0 !important;
+    overflow: hidden; /* Corta de raíz el colapso de márgenes que generaba las líneas blancas */
+    display: block !important;
+}
+
+nav ul {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+}
+
+nav ul li { 
+    display: inline-block !important;
+    margin: 0 12px !important;
+}
+
+nav ul li a {
+    text-decoration: none !important;
+    color: var(--crema) !important;
+    font-size: 1.25rem !important;
+    padding: 6px 12px !important;
+    border-radius: 4px !important;
+    transition: background-color 0.2s ease !important;
+}
+
+nav ul li a:hover {
+    background-color: var(--azul-petroleo) !important;
+    color: #ffffff !important;
+}
+
+/* ==========================================================================
+   4. HERO SECTION (IMAGEN DE FONDO)
+   ========================================================================== */
+#hero {
+    /* Ruta relativa limpia desde la carpeta assets/estilo.css */
+    background-image: url('img/hero_section_ltox.png'); 
+    background-size: cover;
+    background-position: center 40%;
+    height: 60vh; 
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 3rem;
+}
+
+#hero-texto {
+    background-color: rgba(0, 0, 0, 0.6); /* Opacidad balanceada para legibilidad */
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    color: #f5f0e8;
+}
+
+#hero-texto h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ==========================================================================
+   5. SECCIONES Y CONTENIDO GENERAL
+   ========================================================================== */
+section {
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--gris-suave); 
+    padding-bottom: 30px;
+}  
+
+section h2 {
+    color: var(--azul-petroleo);
+    font-size: 1.75rem;
+    border-left: 4px solid var(--cafe-medio);
+    padding-left: 10px;
+    margin-bottom: 1.5rem;
+}
+
+/* ==========================================================================
+   6. OPTIMIZACIONES PARA COMPONENTES BOOTSTRAP
+   ========================================================================== */
+/* Forzar que las listas mantengan el fondo crema de la web y no el blanco de Bootstrap */
+.list-group-item {
+    background-color: transparent !important; 
+    color: var(--texto-oscuro) !important;
+    border-color: var(--gris-suave) !important;
+}
+
+/* Estabilizador para las tarjetas de imágenes de la comunidad */
+.card {
+    background-color: #ffffff;
+    border: 1px solid var(--gris-suave);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.card-title {
+    color: var(--texto-oscuro);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   7. FOOTER
+   ========================================================================== */
+footer { 
+    border-top: 4px solid var(--azul-petroleo);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
